@@ -3,6 +3,16 @@ import dash
 #import dcc to create our graph in our layout
 import dash_core_components as dcc
 #used to generate HTML components
+
+
+
+
+
+
+
+
+
+
 import dash_html_components as html
 
 #init a Dash as app
