@@ -7,7 +7,7 @@ import dash_html_components as html
 #use pandas to read data
 import pandas as pd
 #this will do the plot
-import ploty.graph_objs as go
+import plotly.graph_objs as go
 
 #init a Dash as app
 app=dash.Dash()
@@ -24,7 +24,7 @@ app.layout = html.Div([
                 x = df[df['continent'] == i]['gdp per capita'],
                 y = df[df['continent'] == i]['life expectancy'],
                 text = df[df['continent'] == i]['country'],
-                mode = 'markers',
+                mode = 'markers', #default to line
                 opacity = 0.8,
                 marker={
                     'size':15,
