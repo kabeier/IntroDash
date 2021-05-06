@@ -29,7 +29,7 @@ app.layout = html.Div([
                 marker={
                     'size':15,
                     'line':{'width':0.5,'color':'white'}
-                }
+                },
                 name=i 
                 )
                 for i in df.continent.unique()
@@ -41,7 +41,7 @@ app.layout = html.Div([
                 legend={'x': 0, 'y': 1},
                 hovermode='closest'
                 )
-                
+
         }
     )
 ])
